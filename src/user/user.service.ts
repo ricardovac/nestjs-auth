@@ -10,14 +10,16 @@ export class UserService {
   async create(createUserDto: CreateUserDto) {
     const data = {
       ...createUserDto, // User terá tudo que tem dentro de CreateUserDto.
-      password: await bcrypt.hash(createUserDto.password, 10)
+      password: await bcrypt.hash(createUserDto.password, 10),
+      confirmPassword: await bcrypt.hash(createUserDto.confirmPassword, 10)
     };
 
     const createdUser = await this.prisma.user.create({ data });
 
     return {
       ...createdUser,
-      password: undefined // Esconde o hash criado apartir do bcrypt.
+      password: undefined, // Esconde o hash criado apartir do bcrypt.
+      confirmPassword: undefined
     };
   }
 
