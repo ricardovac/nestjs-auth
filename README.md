@@ -22,9 +22,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Autenticação com Token JWT
+### Stack:
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. <br>
+[Prisma](https://github.com/prisma/prisma) next-generation ORM. <br>
+[SQLite](https://github.com/sqlite/sqlite) database engine. <br>
 
 ## Installation
 
